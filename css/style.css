@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
-    width: 220px;
+    width: 200px;
     height: calc(100vh - 80px);
     background-color: #000000;
 }
@@ -17,7 +22,7 @@ main{
     display: flex;
 }
 .main-contents{
-    width: 85%;
+    width: 100%;
 }
 .upper-button-section{
     background-color: #080b12;
@@ -26,7 +31,62 @@ main{
     text-align: right;
     padding: 0.8rem 0;
 }
+.disc-select-upper{
+    color: #2c3038;
+    max-width: 1200px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.selections{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.selections li{
+    margin-right: 1rem;
+}
+.disc-wrapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.disc-container{
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    
+}
+.disc-container .disc-name{
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+}
+.disc-container .sub-disc{
+    font-size: 0.65rem;
+    color: #6f7277;
+}
+.disc{
+    height: 120px;
+    width: 120px;
+}
+.disc img{
+    height: 100%;
+}
 footer{
     height: 80px;
     background-color: #282828;
 }
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+ /* da lg 992 a  md 768px */
+
+ @media screen and (max-width: 768px) {
+
+ }
