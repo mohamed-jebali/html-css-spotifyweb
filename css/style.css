@@ -62,15 +62,28 @@ main{
 }
 .upper-button-section{
     background-color: #080b12;
-    height: 10%;
+    height: 12%;
     width: 100%;
     text-align: right;
-    padding: 0.8rem 0;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+button{
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.55rem 1.5rem;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 1rem;
+    background-color: #000000;
 }
 .disc-select-upper{
     color: #2c3038;
     max-width: 1200px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 1rem 0;
 }
@@ -78,6 +91,7 @@ main{
     list-style-type: none;
     display: flex;
     justify-content: center;
+    font-size: 0.6rem;
 }
 .selections li{
     margin-right: 1rem;
@@ -85,17 +99,27 @@ main{
 .disc-wrapper{
     max-width: 1200px;
     display: flex;
+    padding: 0 1rem;
 }
 .disc-container{
     text-align: center;
     font-weight: bold;
     margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.title-disc{
+    margin-bottom: 1rem;
 }
 h1{
-    margin-bottom: 1.2rem;
     font-size: 1rem;
-    padding: 0 1rem;
-    
+    padding: 0 1rem;    
+}
+.listen-advice{
+    margin-top: 0.5rem;
+    color: #4b4e55;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 0 1rem; 
 }
 .disc-container .disc-name{
     margin: 0.5rem 0;
@@ -125,7 +149,7 @@ footer{
 
  @media screen and (max-width: 992px) {
     header{
-        width: 200px;
+        width: 100%;
     }
  }
 
@@ -137,6 +161,10 @@ footer{
     header{
         width: 200px;
     }
+    .disc-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
   }
 
 
@@ -144,7 +172,7 @@ footer{
 
     @media screen and (max-width: 576px) {
         header{
-            max-width: 100px;
+            /* width: 200px; */
         }
         .playlist{
             display: none;
