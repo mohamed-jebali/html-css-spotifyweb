@@ -16,6 +16,9 @@ header{
     height: calc(100vh - 80px);
     background-color: #000000;
 }
+.simple-logo{
+    display: none;
+}
 .main-icons{
     /* background-color: aqua; */
     padding: 1.2rem;
@@ -101,6 +104,7 @@ button{
     max-width: 1200px;
     display: flex;
     padding: 0 1rem;
+    flex-wrap: wrap;
 }
 .disc-container{
     text-align: center;
@@ -162,7 +166,7 @@ footer{
 
  @media screen and (max-width: 992px) {
     header{
-        width: 100%;
+        width: 200px;
     }
  }
 
@@ -183,8 +187,15 @@ footer{
     /* da sm 576 a  xs 0px */
 
     @media screen and (max-width: 576px) {
-        header{
-            /* width: 200px; */
+        .disc-wrapper{
+            width: calc(100% / 2 - 2rem);
+        }
+        .simple-logo{
+            display: block;
+            height: 30px;
+        }
+        .full-logo{
+            display: none;
         }
         .playlist{
             display: none;
