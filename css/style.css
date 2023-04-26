@@ -56,6 +56,7 @@ main{
     height: calc(100vh - 80px);
     background-color: #141922;
     display: flex;
+    overflow-y: scroll;
 }
 .main-contents{
     width: 100%;
@@ -130,8 +131,8 @@ h1{
     color: #6f7277;
 }
 .disc{
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
 }
 .disc img{
     height: 100%;
@@ -145,6 +146,15 @@ footer{
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+
+  /* da xl 1200 a lg 992px */
+
+  @media screen and (max-width: 992px) {
+    header{
+        /* width: 100%; */
+    }
+ }
+
  /* da lg 992 a  md 768px */
 
  @media screen and (max-width: 992px) {
@@ -152,7 +162,6 @@ footer{
         width: 100%;
     }
  }
-
 
 
   /* da md 768px a sm 576px */
