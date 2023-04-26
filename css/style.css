@@ -5,3 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    width: 220px;
+    height: calc(100vh - 80px);
+    background-color: #000000;
+}
+main{
+    height: calc(100vh - 80px);
+    background-color: #141922;
+    display: flex;
+}
+.main-contents{
+    width: 85%;
+}
+.upper-button-section{
+    background-color: #080b12;
+    height: 10%;
+    width: 100%;
+    text-align: right;
+    padding: 0.8rem 0;
+}
+footer{
+    height: 80px;
+    background-color: #282828;
+}
