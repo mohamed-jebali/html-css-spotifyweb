@@ -17,14 +17,37 @@ header{
     background-color: #000000;
 }
 .main-icons{
-    background-color: aqua;
-    padding: 1rem;
+    /* background-color: aqua; */
+    padding: 1.2rem;
     list-style-type: none;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     font-weight: 600;
 }
-.main-icons li{
-    margin-bottom: 0.8rem;
+.line-header{
+    width: 80%;
+    border: 0.5px solid white;
+    margin: 1rem 0;
+}
+.add-icon i{
+    vertical-align: middle;
+}
+.playlist{
+    /* background-color: aqua; */
+    padding: 1.2rem;
+    list-style-type: none;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+.user-options{
+    /* background-color: aqua; */
+    padding: 1.2rem;
+    list-style-type: none;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+header li{
+    margin-bottom: 0.5rem;
 }
 #spotify-logo{
     margin-bottom: 1.5rem;
@@ -100,6 +123,30 @@ footer{
 
  /* da lg 992 a  md 768px */
 
- @media screen and (max-width: 768px) {
-
+ @media screen and (max-width: 992px) {
+    header{
+        width: 200px;
+    }
  }
+
+
+
+  /* da md 768px a sm 576px */
+
+  @media screen and (max-width: 768px) {
+    header{
+        width: 200px;
+    }
+  }
+
+
+    /* da sm 576 a  xs 0px */
+
+    @media screen and (max-width: 576px) {
+        header{
+            max-width: 100px;
+        }
+        .playlist{
+            display: none;
+        }
+    }
