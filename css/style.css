@@ -114,22 +114,26 @@ button{
 .disc-container{
     text-align: center;
     font-weight: bold;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     margin-bottom: 1rem;
+    width: calc(100% / 6 - 1rem);
 }
 .title-disc{
     margin-bottom: 1rem;
+    padding: 0 1rem;
 }
 h1{
-    font-size: 1rem;
-    padding: 0 1rem;    
+    font-size: 1rem;   
 }
 .listen-advice{
     margin-top: 0.5rem;
     color: #4b4e55;
     font-size: 0.65rem;
     font-weight: bold;
-    padding: 0 1rem; 
+}
+.round-image{
+    border-radius: 50%;
+    object-fit: cover;
 }
 .disc-container .disc-name{
     margin: 0.5rem 0;
@@ -175,9 +179,6 @@ footer{
   /* da md 768px a sm 576px */
 
   @media screen and (max-width: 768px) {
-    header{
-        width: 200px;
-    }
     .disc-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -188,8 +189,14 @@ footer{
     /* da sm 576 a  xs 0px */
 
     @media screen and (max-width: 576px) {
-        .disc-wrapper{
-            width: calc(100% / 2 - 2rem);
+        .disc-container{
+            width: calc(100% / 2 - 1rem);
+        }
+        main{
+            width: 90%;
+        }
+        header{
+            width: 10%;
         }
         .simple-logo{
             display: block;
