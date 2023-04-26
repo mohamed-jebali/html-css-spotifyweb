@@ -105,11 +105,12 @@ button{
     display: flex;
     padding: 0 1rem;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 .disc-container{
     text-align: center;
     font-weight: bold;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     margin-bottom: 1rem;
 }
 .title-disc{
@@ -135,8 +136,8 @@ h1{
     color: #6f7277;
 }
 .disc{
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
 }
 .disc img{
     height: 100%;
@@ -158,7 +159,7 @@ footer{
         /* width: 100%; */
     }
     .disc-wrapper{
-        width: calc(100% / 4 - 2rem);
+        width: calc(100% / 4 - 1rem);
     }
  }
 
