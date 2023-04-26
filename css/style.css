@@ -16,6 +16,19 @@ header{
     height: calc(100vh - 80px);
     background-color: #000000;
 }
+.main-icons{
+    background-color: aqua;
+    padding: 1rem;
+    list-style-type: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.main-icons li{
+    margin-bottom: 0.8rem;
+}
+#spotify-logo{
+    margin-bottom: 1.5rem;
+}
 main{
     height: calc(100vh - 80px);
     background-color: #141922;
@@ -49,11 +62,11 @@ main{
 .disc-wrapper{
     max-width: 1200px;
     display: flex;
-    justify-content: space-around;
 }
 .disc-container{
     text-align: center;
     font-weight: bold;
+    margin-right: 1rem;
 }
 h1{
     margin-bottom: 1.2rem;
