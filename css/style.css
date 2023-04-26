@@ -59,7 +59,7 @@ main{
     overflow-y: scroll;
 }
 .main-contents{
-    width: 100%;
+    width: calc(100% - 200px);
 }
 .upper-button-section{
     background-color: #080b12;
@@ -152,6 +152,9 @@ footer{
   @media screen and (max-width: 992px) {
     header{
         /* width: 100%; */
+    }
+    .disc-wrapper{
+        width: calc(100% / 4 - 2rem);
     }
  }
 
