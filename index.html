@@ -16,63 +16,68 @@
 
 <div class="max-container">
     <header>
-        <ul class="main-icons">
-            <li id="spotify-logo">
-                <img src="./img/logo.svg" class="full-logo" alt="logo-spotify">
-                <img src="./img/logo-small.svg" class="simple-logo" alt="logo-spotify">
-            </li>
-            <li>
-                <i class="fa-solid fa-house"></i>
-                Home
-            </li>
-            <li>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Cerca
-            </li>
-            <li>
-                <i class="fa-solid fa-bookmark"></i>
-                La tua libreria
-            </li>
-        </ul>
-        <ul class="playlist">
-            <li>
-                PLAYLIST
-            </li>
-            <li class="add-icon">
-                <i class="fa-solid fa-square-plus fa-2x"></i>
-                Crea Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-            <li>
-                Nome Playlist
-            </li>
-        </ul>
-        <ul class="user-options">
-            <li>
-                <i class="fa-regular fa-circle-down"></i>
-                Installa app
-            </li>
-            <div class="line-header">
-            </div>
-            <li>
-                <i class="fa-solid fa-circle-user"></i>
-                John Doe
-            </li>
-        </ul>
+        <div class="upper-header">
+            <ul class="main-icons">
+                <li id="spotify-logo">
+                    <img src="./img/logo.svg" class="full-logo" alt="logo-spotify">
+                    <img src="./img/logo-small.svg" class="simple-logo" alt="logo-spotify">
+                </li>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Cerca
+                </li>
+                <li>
+                    <i class="fa-solid fa-bookmark"></i>
+                    La tua libreria
+                </li>
+            </ul>
+            <ul class="playlist">
+                <li>
+                    PLAYLIST
+                </li>
+                <li class="add-icon">
+                    <i class="fa-solid fa-square-plus fa-2x"></i>
+                    Crea Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+                <li>
+                    Nome Playlist
+                </li>
+            </ul>
+        </div>
+
+        <div class="lower-header">
+            <ul class="user-options">
+                <li>
+                    <i class="fa-regular fa-circle-down"></i>
+                    Installa app
+                </li>
+                <div class="line-header">
+                </div>
+                <li>
+                    <i class="fa-solid fa-circle-user"></i>
+                    John Doe
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="main-contents">
@@ -111,7 +116,10 @@
                 </h1>
             <div class="disc-wrapper">
                 <div class="disc-container">
-                    <img src="./img/metal_lifting.jpg" alt="metal_lifting-image">
+                    <div class="image-disc">
+                        <img src="./img/metal_lifting.jpg" alt="metal_lifting-image">
+                            <i class="fa-regular fa-circle-play fa-2x" class="hidden-play"></i>
+                    </div>
                     <div class="text-container">
                         <p class="disc-name">
                             Heavy Metal
@@ -122,7 +130,10 @@
                     </div>
                 </div>
                 <div class="disc-container">
-                    <img src="./img/stranger.jpeg" alt="Stranger-things-image">
+                    <div class="image-disc">
+                        <img src="./img/stranger.jpeg" alt="Stranger-things-image">
+                        <i class="fa-regular fa-circle-play fa-2x" class="hidden-play"></i>
+                    </div>
                     <div class="text-container">
                         <p class="disc-name">
                             Stranger Things, Vol.1(a Netflix Original Series Soundtrack)
