@@ -266,9 +266,15 @@ footer{
 
 }
 .right-side{
-    background-color: rgb(43, 31, 219);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(43, 31, 219); */
     width: 20%;
     height: 100%;
+}
+.volume-duration{
+    width: 40%;
 }
 
 /************************************************
