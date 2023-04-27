@@ -237,15 +237,25 @@ footer{
 
         .main-icons{
             padding: 0 0.5rem;
+            text-align: center;
         }
         .main-icons a{
             display: none;
+        }
+        .user-options{
+            text-align: center;
         }
         .user-options a{
             display: none;
         }
         #spotify-logo img{
             width: 40px;
+        }
+        .user-options{
+            padding: 0;
+        }
+        .line-header{
+            display: none;
         }
         .simple-logo{
             display: block;
