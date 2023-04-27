@@ -65,7 +65,6 @@ main{
     overflow-y: scroll;
 }
 .main-contents{
-    /* width: calc(100% - 200px); */
     width: 100%;
 }
 .upper-button-section{
