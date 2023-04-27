@@ -206,27 +206,38 @@ footer{
     height: 100%;
 }
 .mid-section{
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+.player-buttons{
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 .time{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .time span{
     font-size: 0.5rem;
+    font-weight: bold;
 }
 .line-time{
     width: 80%;
+    height: 3px;
     background-color: #5a5a5a;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
 }
 .line-duration{
     width: 30%;
     border: 1.5px solid #c1c1c1;
+    border-radius: 0.8rem;
 
 }
 
