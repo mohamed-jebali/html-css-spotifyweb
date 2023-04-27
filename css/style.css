@@ -117,10 +117,10 @@ button{
     width: calc(100% / 6 - 1rem);
 }
 .disc-container>img{
-    height: 100%;
+    width: 100%;
 }
 h1{
-    font-size: 1rem; 
+    font-size: 1.3rem; 
     margin-bottom: 1rem;  
 }
 .text-container{
@@ -128,10 +128,10 @@ h1{
 }
 .disc-container .disc-name{
     margin: 0.5rem 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .disc-container .sub-disc{
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: #6f7277;
 }
 .listen-advice{
@@ -159,7 +159,7 @@ footer{
  @media screen and (max-width: 992px) {
 
     .disc-container{
-        width: calc(100% / 4 - 0.5rem);
+          width: calc(100% / 4 - 1rem);
     }
     header{
         width: 200px;
@@ -170,6 +170,9 @@ footer{
   /* da md 768px a sm 576px */
 
   @media screen and (max-width: 768px) {
+    .disc-container{
+            width: calc(100% / 2 - 1rem);
+        }
     .disc-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -180,9 +183,6 @@ footer{
     /* da sm 576 a  xs 0px */
 
     @media screen and (max-width: 576px) {
-        .disc-container{
-            width: calc(100% / 2 - 1rem);
-        }
         main{
             width: 90%;
         }
