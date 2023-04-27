@@ -51,8 +51,8 @@ header ul li a:hover{
 }
 
 .line-header{
-    width: 87%;
-    border: 0.5px solid white;
+    width: 100%;
+    border: 0.5px solid #424242;
     margin: 0.5rem 0;
 }
 
@@ -94,9 +94,7 @@ main{
     display: flex;
     overflow-y: scroll;
 }
-/* .main-contents{
-    width: calc(100% - 150px);
-} */
+
 .upper-button-section{
     background-color: #080b12;
     height: 10%;
@@ -197,8 +195,45 @@ h1{
     object-fit: cover;
 }
 footer{
+    display: flex;
+    justify-content: space-between;
     height: 80px;
     background-color: #282828;
+}
+.left-side{
+    background-color: aquamarine;
+    width: 10%;
+    height: 100%;
+}
+.mid-section{
+    background-color: darkgreen;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.time{
+    display: flex;
+    justify-content: space-around;
+}
+.time span{
+    font-size: 0.5rem;
+}
+.line-time{
+    width: 80%;
+    background-color: #5a5a5a;
+    border-radius: 0.5rem;
+}
+.line-duration{
+    width: 30%;
+    border: 1.5px solid #c1c1c1;
+
+}
+
+.right-side{
+    background-color: rgb(43, 31, 219);
+    width: 20%;
+    height: 100%;
 }
 
 /************************************************
