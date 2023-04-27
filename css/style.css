@@ -20,6 +20,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 a{
@@ -116,14 +117,32 @@ button{
     color: white;
     border-radius: 1rem;
     background-color: #000000;
+    transition: 1s;
+}
+.upper-button-section:hover button{
+    transform: scale(1.1);
 }
 .disc-select-upper{
-    margin-top: 6rem;
+    margin-top: 5rem;
     color: #2c3038;
     max-width: 1200px;
     font-size: 0.7rem;
     font-weight: bold;
     padding-bottom: 1rem;
+}
+.green-line{
+    margin-top: 0.25rem;
+    margin-left: 1.1rem;
+    width: 40%;
+    border: 1px solid greenyellow;
+}
+
+.green-line-header{
+    height: 4%;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    border: 1.5px solid greenyellow;
 }
 .selections{
     list-style-type: none;
@@ -208,10 +227,33 @@ footer{
     height: 100%;
     padding-left: 1rem;
 }
+
+.mid-section{
+    /* background-color: darkgreen; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-side{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(43, 31, 219); */
+    width: 20%;
+    height: 100%;
+}
 .disc-played,.add-folder{
     display: flex;
     align-items: center;
     color: #838383;
+}
+.disc-played p a{
+    color:#838383;
+}
+
+.disc-played p a:hover{
+    text-decoration: underline;
 }
 
 .add-folder{
@@ -222,6 +264,14 @@ footer{
     margin-right: 0.5rem;
 }
 
+.fa-heart:hover{
+    color: white;
+}
+
+.fa-folder:hover{
+    color: white;
+}
+
 .disc-min{
     height: 50px;
     padding-right: 0.5rem;
@@ -230,13 +280,6 @@ footer{
     height: 100%;
 }
 
-.mid-section{
-    /* background-color: darkgreen; */
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
 .player-buttons{
     padding: 1.2rem 0;
     display: flex;
@@ -263,15 +306,44 @@ footer{
     width: 30%;
     border: 1.5px solid #c1c1c1;
     border-radius: 0.8rem;
+    position: relative;
 
 }
-.right-side{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: rgb(43, 31, 219); */
-    width: 20%;
-    height: 100%;
+
+.button-duration{
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 70%;
+    top: -5.5px;
+}
+
+.button-duration-long{
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 95%;
+    top: -5.5px;
+}
+
+.mid-section .fa-circle-play:hover{
+    transform: scale(1.2);
+}
+
+.line-duration:hover .button-duration{
+    display: block;
+}
+.line-duration:hover .button-duration-long{
+    display: block;
+}
+.line-duration:hover{
+    border: 1.5px solid greenyellow;
 }
 .volume-duration{
     width: 40%;
@@ -290,8 +362,6 @@ footer{
           width: calc(100% / 4 - 1rem);
     }
  }
-
-
   /* da md 768px a sm 576px */
 
   @media screen and (max-width: 768px) {
@@ -303,8 +373,6 @@ footer{
         flex-wrap: wrap;
     }
   }
-
-
     /* da sm 576 a  xs 0px */
 
     @media screen and (max-width: 576px) {
@@ -348,5 +416,13 @@ footer{
         }
         .upper-button-section{
             width: calc(100% - 10%);
+        }
+        .add-folder{
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .green-line-header{
+            display: none;
         }
     }
