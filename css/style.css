@@ -78,7 +78,7 @@ header li{
     margin-bottom: 0.5rem;
     color: #5d5d5d;
 }
-.color-white{
+#color-white{
     color: white;
 }
 #spotify-logo{
@@ -201,10 +201,35 @@ footer{
     background-color: #282828;
 }
 .left-side{
-    background-color: aquamarine;
-    width: 10%;
+    display: flex;
+    font-size: 0.5rem;
+    /* background-color: aquamarine; */
+    width: 20%;
+    height: 100%;
+    padding-left: 1rem;
+}
+.disc-played,.add-folder{
+    display: flex;
+    align-items: center;
+    color: #838383;
+}
+
+.add-folder{
+    margin-left: 2rem;
+}
+
+.add-folder i{
+    margin-right: 0.5rem;
+}
+
+.disc-min{
+    height: 50px;
+    padding-right: 0.5rem;
+}
+.disc-min img{
     height: 100%;
 }
+
 .mid-section{
     /* background-color: darkgreen; */
     width: 40%;
@@ -240,7 +265,6 @@ footer{
     border-radius: 0.8rem;
 
 }
-
 .right-side{
     background-color: rgb(43, 31, 219);
     width: 20%;
