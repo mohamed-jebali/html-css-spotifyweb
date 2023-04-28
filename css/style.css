@@ -125,7 +125,6 @@ button:hover{
 .disc-select-upper{
     margin-top: 5rem;
     color: #2c3038;
-    /* max-width: 1200px; */
     font-size: 0.7rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -224,14 +223,12 @@ footer{
 .left-side{
     display: flex;
     font-size: 0.5rem;
-    /* background-color: aquamarine; */
     width: 20%;
     height: 100%;
     padding-left: 1rem;
 }
 
 .mid-section{
-    /* background-color: darkgreen; */
     width: 40%;
     height: 100%;
     display: flex;
@@ -242,7 +239,6 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding-right: 1rem;
-    /* background-color: rgb(43, 31, 219); */
     width: 20%;
     height: 100%;
 }
@@ -321,7 +317,7 @@ footer{
     border-radius: 50%;
     position: absolute;
     left: 70%;
-    top: -5.5px;
+    bottom: -5px;
 }
 
 .button-duration-long{
@@ -332,7 +328,7 @@ footer{
     border-radius: 50%;
     position: absolute;
     left: 95%;
-    top: -5.5px;
+    bottom: -5px;
 }
 
 .mid-section .fa-circle-play:hover{
@@ -369,7 +365,6 @@ footer{
     }
     .disc-select-upper ul{
         margin: auto;
-        /* width: calc(100% / 6 ); */
         max-width: 450px;
         display: flex;
         flex-wrap: wrap;
