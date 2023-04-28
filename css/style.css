@@ -444,10 +444,13 @@ footer{
         .green-line-header{
             display: none;
         }
-        .disc-select-upper{
-            max-width: 600px;
+        .disc-select-upper ul{
+            max-width: 350px;
         }
-        .right-side,.left-side,.mid-section{
+        .right-side,.left-side{
+            width: 150px;
+        }
+        .mid-section{
             width: 200px;
         }
     }
