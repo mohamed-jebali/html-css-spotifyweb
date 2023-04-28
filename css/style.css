@@ -125,7 +125,7 @@ button:hover{
 .disc-select-upper{
     margin-top: 5rem;
     color: #2c3038;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     font-size: 0.7rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -365,7 +365,17 @@ footer{
           width: calc(100% / 4 - 1rem);
     }
     .disc-select-upper{
-        margin-top: 7rem;
+        margin-top: 5rem;
+    }
+    .disc-select-upper ul{
+        margin: auto;
+        /* width: calc(100% / 6 ); */
+        max-width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .disc-select-upper ul li{
+        margin-bottom: 1.5rem;
     }
  }
   /* da md 768px a sm 576px */
@@ -377,6 +387,9 @@ footer{
     .disc-wrapper{
         display: flex;
         flex-wrap: wrap;
+    }
+    .disc-select-upper ul{
+        max-width: 300px;
     }
     .add-folder{
         flex-direction: column;
@@ -391,7 +404,7 @@ footer{
             width: 50px;
         }
         main{
-            width: calc(100% - 10%);
+            width: calc(100% - 50px);
         }
         .main-icons{
             padding: 0 0.5rem;
@@ -426,9 +439,15 @@ footer{
             display: none;
         }
         .upper-button-section{
-            width: calc(100% - 10%);
+            width: calc(100% - 50px);
         }
         .green-line-header{
             display: none;
+        }
+        .disc-select-upper{
+            max-width: 600px;
+        }
+        .right-side,.left-side,.mid-section{
+            width: 200px;
         }
     }
