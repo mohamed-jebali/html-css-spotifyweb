@@ -449,6 +449,10 @@ footer{
             width: 200px;
         }
     }
+
+
+    /* da 1080 a 350px */
+
     @media screen and (max-height:350px) {
         header{
             overflow-y: scroll;
