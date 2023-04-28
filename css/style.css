@@ -132,9 +132,10 @@ button:hover{
 }
 .green-line{
     margin-top: 0.25rem;
-    margin-left: 1.1rem;
+    margin-left: 1.2rem;
     width: 40%;
-    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    height: 2px;
 }
 
 .green-line-header{
@@ -216,6 +217,7 @@ h1{
 footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     background-color: #282828;
 }
@@ -239,6 +241,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-right: 1rem;
     /* background-color: rgb(43, 31, 219); */
     width: 20%;
     height: 100%;
@@ -257,7 +260,7 @@ footer{
 }
 
 .add-folder{
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .add-folder i{
@@ -375,12 +378,17 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+    .add-folder{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
   }
     /* da sm 576 a  xs 0px */
 
     @media screen and (max-width: 576px) {
         header{
-            width: 10%;
+            width: 50px;
         }
         main{
             width: calc(100% - 10%);
@@ -419,11 +427,6 @@ footer{
         }
         .upper-button-section{
             width: calc(100% - 10%);
-        }
-        .add-folder{
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
         }
         .green-line-header{
             display: none;
