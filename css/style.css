@@ -100,7 +100,6 @@ main{
     background-color: #080b12;
     height: 10%;
     width: calc(100% - 150px);
-    text-align: right;
     padding-right: 0.5rem;
     display: flex;
     align-items: center;
@@ -119,7 +118,8 @@ button{
     background-color: #000000;
     transition: 1s;
 }
-.upper-button-section:hover button{
+
+button:hover{
     transform: scale(1.1);
 }
 .disc-select-upper{
@@ -361,6 +361,9 @@ footer{
     .disc-container{
           width: calc(100% / 4 - 1rem);
     }
+    .disc-select-upper{
+        margin-top: 7rem;
+    }
  }
   /* da md 768px a sm 576px */
 
@@ -396,7 +399,7 @@ footer{
             display: none;
         }
         #spotify-logo img{
-            width: 40px;
+            width: 100%;
         }
         .user-options{
             padding: 0;
