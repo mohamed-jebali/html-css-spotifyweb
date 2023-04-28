@@ -138,9 +138,9 @@ button:hover{
 }
 
 .green-line-header{
-    height: 4%;
+    height: 20px;
     position: absolute;
-    top: 12%;
+    top: 7%;
     left: 0;
     border: 1.5px solid greenyellow;
 }
@@ -447,5 +447,13 @@ footer{
         }
         .mid-section{
             width: 200px;
+        }
+    }
+    @media screen and (max-height:350px) {
+        header{
+            overflow-y: scroll;
+        }
+        .green-line-header{
+            top: 25%;
         }
     }
