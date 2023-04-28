@@ -98,7 +98,7 @@ main{
 
 .upper-button-section{
     background-color: #080b12;
-    height: 10%;
+    height: 60px;
     width: calc(100% - 150px);
     padding-right: 0.5rem;
     display: flex;
